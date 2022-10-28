@@ -11,5 +11,5 @@
   systemd:
    name: mariadb
    state: started
-   enabled: yes---
+   enabled: yes
 # tasks file for mariadb
