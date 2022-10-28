@@ -1,0 +1,17 @@
+--- name: Apache
+  yum:
+   name: httpd
+   state: present
+
+- name: disable firewall
+  systemd:
+   name: firewalld
+   state: stopped
+   enabled: no
+
+- name: Mise en place du serveur apache
+  systemd:
+   name: httpd
+   state: started
+   enabled: yes-
+# tasks file for apache
